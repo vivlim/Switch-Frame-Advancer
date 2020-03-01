@@ -33,7 +33,7 @@ steps:
     action: 'create'
     target: '$(Build.SourceVersion)'
     tagSource: 'userSpecifiedTag'
-    tag: 'rel-$(Build.SourceVersion)'
+    tag: '$(Build.BuildNumber)'
     assets: '$(Pipeline.Workspace)/bin/Joystick.elf'
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'commitBased'
