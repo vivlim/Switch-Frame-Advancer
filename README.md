@@ -1,3 +1,6 @@
+# Build status
+[![Build Status](https://dev.azure.com/vvnl/adhoc/_apis/build/status/vivlim.Switch-Frame-Advancer?branchName=master)](https://dev.azure.com/vvnl/adhoc/_build/latest?definitionId=1&branchName=master)
+
 ## All code was pretty much pulled from progmem's Switch-Fightstick
 https://github.com/progmem/Switch-Fightstick
 
