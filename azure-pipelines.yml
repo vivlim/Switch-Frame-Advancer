@@ -25,3 +25,14 @@ steps:
     artifact: 'build'
     publishLocation: 'pipeline'
   displayName: 'publish binary'
+
+- task: GitHubRelease@1
+  inputs:
+    gitHubConnection: 'github.com_vivlim'
+    repositoryName: 'vivlim/Switch-Frame-Advancer'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'gitTag'
+    assets: '$(Pipeline.Workspace)/bin'
+    changeLogCompareToRelease: 'lastFullRelease'
+    changeLogType: 'commitBased'
