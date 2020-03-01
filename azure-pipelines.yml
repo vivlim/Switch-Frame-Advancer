@@ -16,7 +16,7 @@ steps:
 - script: make
   displayName: 'build'
 
-- script: mkdir bin; cp Joystick.elf bin/
+- script: mkdir $(Pipeline.Workspace)/bin; cp Joystick.elf $(Pipeline.Workspace)/bin/
   displayName: 'copy binary to /bin'
 
 - task: PublishPipelineArtifact@1
