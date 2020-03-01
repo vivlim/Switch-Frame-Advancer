@@ -34,6 +34,6 @@ steps:
     target: '$(Build.SourceVersion)'
     tagSource: 'userSpecifiedTag'
     tag: 'rel-$(Build.SourceVersion)'
-    assets: '$(Pipeline.Workspace)/bin'
+    assets: '$(Pipeline.Workspace)/bin/Joystick.elf'
     changeLogCompareToRelease: 'lastFullRelease'
     changeLogType: 'commitBased'
